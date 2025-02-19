@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+/* -------------------- */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #262626;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 39px 0px 39px 236px;
+}
+
+header .logotipo {
+    font-family: 'Archivo', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
