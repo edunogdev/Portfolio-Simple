@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /* -------------------- */
 
 * {
@@ -9,7 +11,9 @@
 }
 
 body {
-    background-color: #262626;
+    background: url(/images/background.svg) no-repeat;
+    background-color: #383838;
+    background-size: cover;
 }
 
 header {
@@ -17,12 +21,71 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 39px 0px 39px 236px;
+    padding: 60px 0px 60px 236px;
 }
 
 header .logotipo {
     font-family: 'Archivo', sans-serif;
     font-size: 36px;
-    margin-bottom: 20px;
     color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.title {
+    width: 426px;
+    padding-top: 110px;
+}
+
+.title h1 {
+    font-family: 'Raleway', serif;
+    font-size: 48px;
+    font-style: bold;
+    color: white;
+    padding-bottom: 6px;
+}
+
+.title h2 {
+    font-family: 'Raleway', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.title  p {
+    font-family: 'IBM Plex Mono', serif;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 18px;
+    padding-bottom: 52px;
+    color: #9C9C9C;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.title p:hover {
+    color: rgb(219, 219, 219);
+}
+
+.title a {
+    font-family: 'Raleway', serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    padding: 22px 72px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+}
+
+.title a:hover {
+    background-color: black;
+    color: white;
+    transition: all .45s;
 }
